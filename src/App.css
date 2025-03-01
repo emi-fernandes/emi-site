@@ -1,26 +1,29 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif; 
-  background-color: #ffffff; 
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
 }
 
 .header {
-  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 250px; 
+  height: 250px;
   background-image: url('fotos/emillyfotocapa.JPG');
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  z-index: 100;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   display: flex;
@@ -40,6 +43,7 @@ body, html {
   margin-bottom: 15px;
 }
 
+/* Navbar */
 .nav ul {
   list-style: none;
   padding: 0;
@@ -63,32 +67,132 @@ body, html {
   text-decoration: underline;
 }
 
+/* Ajusta o espaço para não esconder conteúdo */
 .main {
+  padding-top: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Seção About */
+.about {
+  background-color: #7540a6;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  width: 730px;
+  margin: -50px auto 20px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 00px;
+  margin: 0 auto;
+}
+
+/* Estilo dos blocos do grid */
+.grid-item {
+  background-color: #c2a3d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  border: 2px solid white;
+  width: 250px;
+  height: 250px;
+}
+
+.grid-item:hover {
+  background-color: #b08bc9;
+  transform: scale(1.05);
+}
+
+/* Ícones dentro dos blocos */
+.grid-item img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+/* Estiliza os textos dentro dos blocos */
+.grid-item p {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Modal */
+.overlay.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
   padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 101;
 }
 
-.project {
-  background-color: white;
-  color: black;
-  margin: 10px 0;
-  padding: 15px;
-  border: 1px solid #ccc; 
+.modal p {
+  font-size: 18px;
+  color: #333;
 }
 
+.modal button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #7540a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #5d2f82;
+}
+
+/* Footer */
 .footer {
-  background-color: #C1B4D9; 
+  background-color: #C1B4D9;
   color: white;
   text-align: center;
   padding: 20px;
- 
+  margin-top: 30px;
 }
 
-.email-link, .linkedin-link {
-  color: #b800c9d8; 
+.footer a {
+  color: #b800c9d8;
   text-decoration: none;
-  padding: 10px;
+  margin: 10px;
+  display: inline-block;
 }
 
-.email-link:hover, .linkedin-link:hover {
+.footer a:hover {
   text-decoration: underline;
 }
