@@ -5,8 +5,8 @@ function App() {
   const [selectedInfo, setSelectedInfo] = useState(null);
 
   const info = {
-    personalfacts: "Personal facts about me, including background and interests.",
-    education: "I am currently in the fourth semester of Data Science and AI at Ibmec.",
+    personalfacts: "Hi! My name is Emilly Fernandes, I’m 21 years old, and I’m from Brazil. I have a deep love for animals, nature, and exploring new things. Being outdoors brings me balance, and I enjoy discovering new places, learning new skills, and experiencing challenges that push me to grow. I’m naturally curious and always on the move, seeking personal growth and fresh perspectives. I also have a tiny, beautiful dog named Mel, who fills my days with joy and companionship. She’s a big part of my life and makes every moment even more special. I believe that every experience shapes us, and I’m always ready for the next adventure!",
+    education: "I am currenly in the fourth semester of Data Science and AI at Ibmec.",
     swimming: "I was a competitive swimmer for six years, learning teamwork and discipline.",
     development: "I specialize in web development with React, HTML, CSS, and JavaScript.",
     dataScience: "I am passionate about data science, machine learning, and AI applications."
