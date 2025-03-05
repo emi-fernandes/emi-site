@@ -150,12 +150,12 @@ body, html {
 /* Seção Projects */
 .projects {
   background-color: #7540a6;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
   color: white;
-  border-radius: 10px;
-  width: 600px;
-  margin: 20px auto;
+  border-radius: 6px;
+  width: 300px;
+  margin: 10px auto;
 }
 
 .projects h2 {
@@ -187,10 +187,12 @@ body, html {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  padding: 40px;
+  padding: 20px;
+  margin: 20px 0;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   border: 2px solid white;
 }
 
@@ -215,8 +217,6 @@ body, html {
   background-color: #5d2f82;
 }
 
-
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -228,9 +228,9 @@ body, html {
   align-items: center;
   justify-content: center;
   z-index: 1000; /* Para garantir que fique sobre o restante do conteúdo */
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease; */
 }
 
 .modal-overlay.active {
@@ -240,16 +240,16 @@ body, html {
 
 .modal {
   background: white;
-  padding: 20px;
+  color: #333;
+  padding: 20px 30px;
   border-radius: 10px;
   text-align: center;
-  max-width: 400px;
+  max-width: 1000px;   /* Tamanho máximo em telas grandes */
+  width: 90%;         /* Em telas pequenas, vai reduzir automaticamente */
+  max-height: 80vh;   /* Altura máxima em relação à tela */
+  overflow-y: auto;   /* Ativa a rolagem vertical caso exceda o max-height */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1010; /* Para garantir que o modal fique acima de tudo */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza na tela */
+  position: relative;
 }
 
 .modal p {
@@ -276,6 +276,10 @@ body, html {
   background-color: #5d2f82;
 }
 
+.modal > * {
+  pointer-events: auto;
+}
+
 /* Estilização do rodapé */
 .footer {
   background-color: #C1B4D9;
@@ -294,4 +298,31 @@ body, html {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #7540a6;
+  padding: 0 10px;
+  transition: color 0.2s;
+}
+
+.arrow:hover {
+  color: #5d2f82;
+}
+
+.carousel-image {
+  max-width: 400px;
+  height: auto;
+  margin: 0 1rem;
 }
