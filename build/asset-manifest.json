@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/emi-site/static/css/main.9e493af0.css",
+    "main.js": "/emi-site/static/js/main.8993ebc7.js",
+    "static/js/453.9518a384.chunk.js": "/emi-site/static/js/453.9518a384.chunk.js",
+    "static/media/emillyfotocapa.JPG": "/emi-site/static/media/emillyfotocapa.319b74dde01bcb0ff254.JPG",
+    "index.html": "/emi-site/index.html",
+    "main.9e493af0.css.map": "/emi-site/static/css/main.9e493af0.css.map",
+    "main.8993ebc7.js.map": "/emi-site/static/js/main.8993ebc7.js.map",
+    "453.9518a384.chunk.js.map": "/emi-site/static/js/453.9518a384.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e493af0.css",
+    "static/js/main.8993ebc7.js"
+  ]
+}
