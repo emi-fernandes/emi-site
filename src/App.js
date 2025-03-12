@@ -20,29 +20,29 @@ function App() {
 
   const data = {
     personalfacts: {
-      text: `Hi! My name is Emilly Fernandes, I’m 21 years old, and I’m from Brazil. I have a deep love for animals, nature, and exploring new things. Being outdoors brings me balance, and I enjoy discovering new places, learning new skills, and experiencing challenges that push me to grow. I also have a tiny, beautiful dog named Mel, who fills my days with joy and companionship.`,
+      text: `Hi! My name is Emilly Fernandes, I’m 21 years old, and I’m from Brazil. I have a deep love for animals, nature, and exploring new things. Being outdoors brings me balance, and I enjoy discovering new places, learning new skills, and experiencing challenges that push me to grow. I’m naturally curious and always on the move, seeking personal growth and fresh perspectives. I also have a tiny, beautiful dog named Mel, who fills my days with joy and companionship. She’s a big part of my life and makes every moment even more special.`,
       images: [
-        `${PUBLIC_URL}/fotos/emillyfoto.jpg`,
-        `${PUBLIC_URL}/fotos/rio.jpg`,
-        `${PUBLIC_URL}/fotos/mel.jpg`,
+        `${PUBLIC_URL}/emillyfoto.jpg`,
+        `${PUBLIC_URL}/rio.jpg`,
+        `${PUBLIC_URL}/mel.jpg`,
       ],
     },
     education: {
-      text: `I’m currently in my fourth semester of Data Science and Artificial Intelligence at Ibmec, Brazil, and spending this semester at EM Normandie in Dublin.`,
+      text: `I’m currently in my fourth semester of Data Science and Artificial Intelligence at Ibmec, Brazil, and spending this semester at EM Normandie in Dublin. This exchange is giving me international academic experience and exposure to new perspectives. Before university, I studied at Rio International School, where I built a strong foundation in English and adaptability.`,
       images: [
-        `${PUBLIC_URL}/fotos/emillyris.jpg`, 
-        `${PUBLIC_URL}/fotos/envw.jpg`, 
+        `${PUBLIC_URL}/emillyris.jpg`, 
+        `${PUBLIC_URL}/envw.jpg`, 
       ],
     },
     swimming: {
-      text: `I have always been passionate about movement and physical activities. I practiced competitive swimming for six years, which taught me discipline, resilience, and teamwork.`,
+      text: `I have always been passionate about movement and physical activities. I practiced competitive swimming for six years, which taught me discipline, resilience, and teamwork. Before that, I trained in ballet from the age of 3 to 14, developing flexibility, balance, and dedication. More recently, I have been passionate about surfing, which allows me to connect with nature while constantly challenging myself to improve.`,
       images: [
-        `${PUBLIC_URL}/fotos/emillysurf.jpg`,
-        `${PUBLIC_URL}/fotos/eminatação.jpg`,  
+        `${PUBLIC_URL}/emillysurf.jpg`,
+        `${PUBLIC_URL}/eminatação.jpg`,  
       ],
     },
     dataScience: {
-      text: `I worked as a web development intern for four months at Lance, a major sports media website in Brazil.`,
+      text: '`I worked as a web development intern for four months at Lance, a major sports media website in Brazil. During this time, I contributed to the development and maintenance of the platform, improving my skills in front-end development, problem-solving, and website optimization. This experience allowed me to work in a fast-paced environment, collaborate with a professional team, and gain hands-on knowledge in website development for a high-traffic sports platform.',
       images: [],
     },
   };
@@ -130,7 +130,36 @@ function App() {
           </div>
         </div>
       )}
-
+           <section id="projects" className="projects-section">
+   <h2>Projects</h2>
+   <div className="projects-grid">
+     <div className="project-item">
+       Web Development
+       <a href="https://github.com/emi-fernandes/deswebap2" target="_blank" rel="noopener noreferrer">
+         <button className="project-btn">Click Here</button>
+       </a>
+     </div>
+     <div className="project-item">
+       Front-end
+       <a href="https://github.com/fseda/Nexus?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">
+         <button className="project-btn">Click Here</button>
+       </a>
+     </div>
+     <div className="project-item">
+       Back-end
+       <a href="https://github.com/isabellavieira/2024.1_Fivel_MallDelivery" target="_blank" rel="noopener noreferrer">
+         <button className="project-btn">Click Here</button>
+       </a>
+     </div>
+     <div className="project-item">
+       Graphic Design and User Experience
+       <a href="https://www.figma.com/proto/j5DMOXntLNIeiu2Bzp4VpT/Untitled?node-id=1-2&starting-point-node-id=1%3A2"
+          target="_blank" rel="noopener noreferrer">
+         <button className="project-btn">Click Here</button>
+       </a>
+     </div>
+   </div>
+ </section> 
       <footer id="contact" className="footer">
         <h2>Contact</h2>
         <a href="https://www.linkedin.com/in/emilly-fernandes-684155261" target="_blank" rel="noopener noreferrer">LinkedIn</a>
