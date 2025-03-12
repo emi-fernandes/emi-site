@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from 'react';
 import './App.css';
-import capa from './fotos/emillyfotocapa.JPG';
 
 function App() {
   const PUBLIC_URL = process.env.PUBLIC_URL || "";
-
+  const capa = process.env.PUBLIC_URL + "/fotos/emillyfotocapa.JPG";
   const headerStyle = {
     backgroundImage: `url(${capa})`, 
     backgroundSize: "cover",

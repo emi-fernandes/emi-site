@@ -1,25 +1,24 @@
 {
   "files": {
     "main.css": "/emi-site/static/css/main.d64ab062.chunk.css",
-    "main.js": "/emi-site/static/js/main.9f6dae98.chunk.js",
-    "main.js.map": "/emi-site/static/js/main.9f6dae98.chunk.js.map",
-    "runtime-main.js": "/emi-site/static/js/runtime-main.20c8151d.js",
-    "runtime-main.js.map": "/emi-site/static/js/runtime-main.20c8151d.js.map",
-    "static/js/2.b754d78d.chunk.js": "/emi-site/static/js/2.b754d78d.chunk.js",
-    "static/js/2.b754d78d.chunk.js.map": "/emi-site/static/js/2.b754d78d.chunk.js.map",
-    "static/js/3.f8e92708.chunk.js": "/emi-site/static/js/3.f8e92708.chunk.js",
-    "static/js/3.f8e92708.chunk.js.map": "/emi-site/static/js/3.f8e92708.chunk.js.map",
+    "main.js": "/emi-site/static/js/main.5d8ccdd8.chunk.js",
+    "main.js.map": "/emi-site/static/js/main.5d8ccdd8.chunk.js.map",
+    "runtime-main.js": "/emi-site/static/js/runtime-main.7eabae11.js",
+    "runtime-main.js.map": "/emi-site/static/js/runtime-main.7eabae11.js.map",
+    "static/js/2.ca330742.chunk.js": "/emi-site/static/js/2.ca330742.chunk.js",
+    "static/js/2.ca330742.chunk.js.map": "/emi-site/static/js/2.ca330742.chunk.js.map",
+    "static/js/3.d89659fe.chunk.js": "/emi-site/static/js/3.d89659fe.chunk.js",
+    "static/js/3.d89659fe.chunk.js.map": "/emi-site/static/js/3.d89659fe.chunk.js.map",
     "index.html": "/emi-site/index.html",
-    "precache-manifest.30fb79ab6e3073a524cf02a65f470efa.js": "/emi-site/precache-manifest.30fb79ab6e3073a524cf02a65f470efa.js",
+    "precache-manifest.33cdab56faeb503825a3776a50d7be98.js": "/emi-site/precache-manifest.33cdab56faeb503825a3776a50d7be98.js",
     "service-worker.js": "/emi-site/service-worker.js",
     "static/css/main.d64ab062.chunk.css.map": "/emi-site/static/css/main.d64ab062.chunk.css.map",
-    "static/js/2.b754d78d.chunk.js.LICENSE.txt": "/emi-site/static/js/2.b754d78d.chunk.js.LICENSE.txt",
-    "static/media/emillyfotocapa.JPG": "/emi-site/static/media/emillyfotocapa.e3b843d5.JPG"
+    "static/js/2.ca330742.chunk.js.LICENSE.txt": "/emi-site/static/js/2.ca330742.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.20c8151d.js",
-    "static/js/2.b754d78d.chunk.js",
+    "static/js/runtime-main.7eabae11.js",
+    "static/js/2.ca330742.chunk.js",
     "static/css/main.d64ab062.chunk.css",
-    "static/js/main.9f6dae98.chunk.js"
+    "static/js/main.5d8ccdd8.chunk.js"
   ]
 }
