@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const PUBLIC_URL = process.env.PUBLIC_URL || "";
-  const capa = process.env.PUBLIC_URL + "/fotos/emillyfotocapa.JPG"
+  const capa = process.env.PUBLIC_URL + "/fotos/emillyfotocapa.jpg"
   const headerStyle = {
     backgroundImage: `url(${capa})`, 
     backgroundSize: "cover",
