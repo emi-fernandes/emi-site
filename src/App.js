@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const PUBLIC_URL = process.env.PUBLIC_URL || "";
-  const capa = process.env.PUBLIC_URL + "/fotos/emillyfotocapa.JPG";
+  const capa = process.env.PUBLIC_URL + "/fotos/emillyfotocap.jpg"
   const headerStyle = {
     backgroundImage: `url(${capa})`, 
     backgroundSize: "cover",
@@ -36,7 +36,7 @@ function App() {
     swimming: {
       text: `I have always been passionate about movement and physical activities. I practiced competitive swimming for six years, which taught me discipline, resilience, and teamwork. Before that, I trained in ballet from the age of 3 to 14, developing flexibility, balance, and dedication. More recently, I have been passionate about surfing, which allows me to connect with nature while constantly challenging myself to improve.`,
       images: [
-        `${PUBLIC_URL}/emillysurf.j `,
+        `${PUBLIC_URL}/emillysurf.jpg`,
         `${PUBLIC_URL}/eminatação.jpg`,  
       ],
     },
