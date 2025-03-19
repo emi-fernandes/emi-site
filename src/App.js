@@ -21,23 +21,23 @@ function App() {
     personalfacts: {
       text: `Hi! My name is Emilly Fernandes, I’m 21 years old, and I’m from Brazil. I have a deep love for animals, nature, and exploring new things. Being outdoors brings me balance, and I enjoy discovering new places, learning new skills, and experiencing challenges that push me to grow. I’m naturally curious and always on the move, seeking personal growth and fresh perspectives. I also have a tiny, beautiful dog named Mel, who fills my days with joy and companionship. She’s a big part of my life and makes every moment even more special.`,
       images: [
-        `${process.env.PUBLIC_URL}/emillyfoto.jpg`,
-        `${process.env.PUBLIC_URL}/rio.jpg`,
-        `${process.env.PUBLIC_URL}/mel.jpg`,
+        `${process.env.PUBLIC_URL}/fotos/emillyfoto.jpg`,
+        `${process.env.PUBLIC_URL}/fotos/rio.jpg`,
+        `${process.env.PUBLIC_URL}/fotos/mel.jpg`,
       ],
     },
     education: {
       text: `I’m currently in my fourth semester of Data Science and Artificial Intelligence at Ibmec, Brazil, and spending this semester at EM Normandie in Dublin. This exchange is giving me international academic experience and exposure to new perspectives. Before university, I studied at Rio International School, where I built a strong foundation in English and adaptability.`,
       images: [
-        `${process.env.PUBLIC_URL}/emillyris.jpg`, 
-        `${process.env.PUBLIC_URL}/envw.jpg`, 
+        `${process.env.PUBLIC_URL}/fotos/emillyris.jpg`, 
+        `${process.env.PUBLIC_URL}/fotos/envw.jpg`, 
       ],
     },
     swimming: {
       text: `I have always been passionate about movement and physical activities. I practiced competitive swimming for six years, which taught me discipline, resilience, and teamwork. Before that, I trained in ballet from the age of 3 to 14, developing flexibility, balance, and dedication. More recently, I have been passionate about surfing, which allows me to connect with nature while constantly challenging myself to improve.`,
       images: [
-        `${process.env.PUBLIC_URL}/emillysurf.jpg`,
-        `${process.env.PUBLIC_URL}/eminatação.jpg`,  
+        `${process.env.PUBLIC_URL}/fotos/emillysurf.jpg`,
+        `${process.env.PUBLIC_URL}/fotos/eminatação.jpg`,  
       ],
     },
     dataScience: {
