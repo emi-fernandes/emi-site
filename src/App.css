@@ -248,36 +248,6 @@ body, html {
   margin: 0 1rem;
 }
 
-.projects {
-  background-color: #7540a6;
-  padding: 30px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-  width: 600px;
-  margin: 20px auto;
-}
-
-.projects h2 {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.projects-grid .full-width {
-  grid-column: span 2;
-}
-
 .project-item {
   background-color: #c2a3d2;
   display: flex;
@@ -297,7 +267,6 @@ body, html {
   transform: scale(1.05);
 }
 
-/* Botões dentro dos blocos de projetos */
 .project-item button {
   margin-top: 10px;
   padding: 8px 16px;
