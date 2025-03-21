@@ -41,7 +41,7 @@ function App() {
       ],
     },
     dataScience: {
-      text: '`I worked as a web development intern for four months at Lance, a major sports media website in Brazil. During this time, I contributed to the development and maintenance of the platform, improving my skills in front-end development, problem-solving, and website optimization. This experience allowed me to work in a fast-paced environment, collaborate with a professional team, and gain hands-on knowledge in website development for a high-traffic sports platform.',
+      text: 'I worked as a web development intern for four months at Lance, a major sports media website in Brazil. During this time, I contributed to the development and maintenance of the platform, improving my skills in front-end development, problem-solving, and website optimization. This experience allowed me to work in a fast-paced environment, collaborate with a professional team, and gain hands-on knowledge in website development for a high-traffic sports platform.',
       images: [],
     },
   };
