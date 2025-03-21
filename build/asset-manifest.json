@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/emi-site/static/css/main.4dad35e8.css",
+    "main.js": "/emi-site/static/js/main.ecf05ded.js",
+    "static/js/453.9518a384.chunk.js": "/emi-site/static/js/453.9518a384.chunk.js",
+    "index.html": "/emi-site/index.html",
+    "main.4dad35e8.css.map": "/emi-site/static/css/main.4dad35e8.css.map",
+    "main.ecf05ded.js.map": "/emi-site/static/js/main.ecf05ded.js.map",
+    "453.9518a384.chunk.js.map": "/emi-site/static/js/453.9518a384.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dad35e8.css",
+    "static/js/main.ecf05ded.js"
+  ]
+}
