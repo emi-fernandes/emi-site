@@ -423,3 +423,14 @@ body, html {
     grid-template-columns: repeat(1, 1fr); 
   }
 }
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Ajuste a largura do popup para ser 90% da tela */
+    padding: 15px; /* Adiciona um pouco de espaço nas bordas */
+  }
+
+  .modal-header, .modal-body {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+}
