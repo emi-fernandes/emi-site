@@ -75,7 +75,7 @@ body, html {
 
 .about-section {
   background-color: #c2a3d2;
-  padding: 40px;
+  padding: 40px; 
   text-align: center;
 }
 
@@ -85,6 +85,44 @@ body, html {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.close-button {
+  position: absolute;
+    top: 10px;
+    right: 25px;
+    background-color: transparent;
+    color: #7540a6;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #5d2f82;
+}
+
+
+.close-button {
+  position: absolute;
+    top: 10px;
+    right: 25px;
+    background-color: transparent;
+    color: #7540a6;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+  color: #5d2f82;
+}
+
 
 .grid-container {
   display: grid;
@@ -111,12 +149,19 @@ body, html {
   transform: scale(1.05);
 }
 
-/* Seção Projects */
 .projects-section {
   background-color: #7540a6;
   color: white;
   text-align: center;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 
 .projects-section h2 {
@@ -134,7 +179,6 @@ body, html {
   max-width: 900px;
   margin: 20px auto;
 }
-
 
 .project-item {
   background: #c2a3d2;
@@ -204,6 +248,73 @@ body, html {
   margin: 0 1rem;
 }
 
+.projects {
+  background-color: #7540a6;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.projects h2 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.projects-grid .full-width {
+  grid-column: span 2;
+}
+
+.project-item {
+  background-color: #c2a3d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  border: 2px solid white;
+}
+
+.project-item:hover {
+  background-color: #b08bc9;
+  transform: scale(1.05);
+}
+
+/* Botões dentro dos blocos de projetos */
+.project-item button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #7540a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.project-item button:hover {
+  background-color: #5d2f82;
+}
+
+
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -245,7 +356,6 @@ body, html {
   margin: 0 auto; 
 }
 
-
 .modal button {
   margin-top: 10px;
   padding: 10px;
@@ -264,7 +374,7 @@ body, html {
   pointer-events: auto;
 }
 
-/* Rodapé */
+/* Footer */
 .footer {
   background-color: #C1B4D9;
   color: white;
@@ -282,4 +392,35 @@ body, html {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-container, .projects-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 800px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container, .projects-grid {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .grid-container, .projects-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 800px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container, .projects-grid {
+    grid-template-columns: repeat(1, 1fr); 
+  }
 }
