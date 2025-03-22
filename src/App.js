@@ -117,7 +117,6 @@ function App() {
       {selectedInfo && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
-          <button className="close-button" onClick={closeModal}> X </button>
             <p>{selectedInfo.text}</p>
             {selectedInfo.images && selectedInfo.images.length > 0 && (
               <div className="carousel-container">
@@ -127,6 +126,7 @@ function App() {
               </div>
             )}
           </div>
+          <button className="close-button" onClick={closeModal}> X </button>
         </div>
       )}
            <section id="projects" className="projects-section">
