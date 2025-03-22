@@ -95,9 +95,9 @@ body, html {
 }
 
 .close-button {
-  position: absolute;
+  position: fixed;
   bottom: 20px; 
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%); 
   background-color: transparent;
   color: #7540a6; 
