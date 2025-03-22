@@ -96,20 +96,20 @@ body, html {
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%); 
   background-color: transparent;
-  color: #7540a6;
-  border: none;
+  color: #7540a6; 
   font-size: 13px;
   font-weight: bold;
   cursor: pointer;
-  padding: 5px;
+  padding: 15px;
   transition: color 0.3s;
 }
 
 .close-button:hover {
-  color: #5d2f82;
+  color: #5d2f82; 
 }
 
 .grid-container {
@@ -238,8 +238,8 @@ body, html {
   text-align: center;
   color: white;
   border-radius: 10px;
-  width: 90%;  /* Ajuste para 90% da largura da tela */
-  max-width: 600px;  /* Limita a largura máxima */
+  width: 90%;  
+  max-width: 600px;  
   margin: 20px auto;
 }
 
@@ -355,38 +355,38 @@ body, html {
   }
 
   .modal {
-    width: 80%; /* Ajuste para 80% da tela em tablets */
-    padding: 20px; /* Ajuste do padding */
+    width: 80%; 
+    padding: 20px; 
   }
 }
 
 @media screen and (max-width: 768px) {
   .grid-container, .projects-grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 coluna para smartphones */
+    grid-template-columns: repeat(1, 1fr); 
   }
 
   .modal {
-    width: 90%; /* Ajuste para 90% da largura da tela em dispositivos móveis */
-    padding: 15px; /* Reduz o padding */
+    width: 90%; 
+    padding: 15px; 
   }
 
   .modal p {
-    font-size: 14px; /* Ajusta o tamanho da fonte */
+    font-size: 14px; 
   }
 }
 
 @media screen and (max-width: 480px) {
   .modal {
-    width: 95%; /* Ocupa quase toda a tela em dispositivos muito pequenos */
-    padding: 10px; /* Diminui ainda mais o padding */
+    width: 95%; 
+    padding: 10px; 
   }
 
   .modal p {
-    font-size: 12px; /* Ajusta para tamanhos de telas muito pequenas */
+    font-size: 12px; 
   }
 
   .modal button {
-    padding: 8px; /* Ajusta o botão para telas menores */
-    font-size: 12px; /* Ajuste no tamanho do texto do botão */
+    padding: 8px; 
+    font-size: 12px;  
   }
 }
