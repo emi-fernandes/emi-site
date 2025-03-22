@@ -1,8 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #dedede;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -88,41 +96,21 @@ body, html {
 
 .close-button {
   position: absolute;
-    top: 10px;
-    right: 25px;
-    background-color: transparent;
-    color: #7540a6;
-    border: none;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-    transition: color 0.3s;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #7540a6;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.3s;
 }
 
 .close-button:hover {
   color: #5d2f82;
 }
-
-
-.close-button {
-  position: absolute;
-    top: 10px;
-    right: 25px;
-    background-color: transparent;
-    color: #7540a6;
-    border: none;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-    transition: color 0.3s;
-}
-
-.close-button:hover {
-  color: #5d2f82;
-}
-
 
 .grid-container {
   display: grid;
@@ -154,10 +142,6 @@ body, html {
   color: white;
   text-align: center;
   padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -234,7 +218,7 @@ body, html {
   font-size: 2rem;
   cursor: pointer;
   color: #7540a6;
-  padding: 0 10px;
+  padding: 0 01px;
   transition: color 0.2s;
 }
 
@@ -254,7 +238,8 @@ body, html {
   text-align: center;
   color: white;
   border-radius: 10px;
-  width: 600px;
+  width: 90%;  /* Ajuste para 90% da largura da tela */
+  max-width: 600px;  /* Limita a largura máxima */
   margin: 20px auto;
 }
 
@@ -265,39 +250,6 @@ body, html {
   text-transform: uppercase;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.projects-grid .full-width {
-  grid-column: span 2;
-}
-
-.project-item {
-  background-color: #c2a3d2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  padding: 40px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-  border: 2px solid white;
-}
-
-.project-item:hover {
-  background-color: #b08bc9;
-  transform: scale(1.05);
-}
-
-/* Botões dentro dos blocos de projetos */
 .project-item button {
   margin-top: 10px;
   padding: 8px 16px;
@@ -312,8 +264,6 @@ body, html {
 .project-item button:hover {
   background-color: #5d2f82;
 }
-
-
 
 .modal-overlay {
   position: fixed;
@@ -339,12 +289,15 @@ body, html {
   padding: 20px 30px;
   border-radius: 10px;
   text-align: center;
-  max-width: 1000px;  
-  width: 90%;         
-  max-height: 80vh;   
-  overflow-y: auto;   
+  max-width: 1000px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
 }
 
 .modal p {
@@ -398,39 +351,42 @@ body, html {
     grid-template-columns: repeat(2, 1fr); 
     justify-content: center; 
     align-items: center; 
-    max-width: 800px; 
+    max-width: 100%; 
+  }
+
+  .modal {
+    width: 80%; /* Ajuste para 80% da tela em tablets */
+    padding: 20px; /* Ajuste do padding */
   }
 }
 
 @media screen and (max-width: 768px) {
   .grid-container, .projects-grid {
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna para smartphones */
+  }
+
+  .modal {
+    width: 90%; /* Ajuste para 90% da largura da tela em dispositivos móveis */
+    padding: 15px; /* Reduz o padding */
+  }
+
+  .modal p {
+    font-size: 14px; /* Ajusta o tamanho da fonte */
   }
 }
 
-
-@media screen and (max-width: 1024px) {
-  .grid-container, .projects-grid {
-    grid-template-columns: repeat(2, 1fr); 
-    justify-content: center; 
-    align-items: center; 
-    max-width: 800px; 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .grid-container, .projects-grid {
-    grid-template-columns: repeat(1, 1fr); 
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-content {
-    width: 90%; 
-    padding: 15px; 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 95%; /* Ocupa quase toda a tela em dispositivos muito pequenos */
+    padding: 10px; /* Diminui ainda mais o padding */
   }
 
-  .modal-header, .modal-body {
-    font-size: 14px; 
+  .modal p {
+    font-size: 12px; /* Ajusta para tamanhos de telas muito pequenas */
+  }
+
+  .modal button {
+    padding: 8px; /* Ajusta o botão para telas menores */
+    font-size: 12px; /* Ajuste no tamanho do texto do botão */
   }
 }
