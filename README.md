@@ -23,6 +23,6 @@ O projeto está hospedado no GitHub Pages, o que facilita a visualização.
 * Você pode acessar a versão ao vivo do site aqui: **https://emi-fernandes.github.io/emi-site/**
 
 **Visualização local:**
-1.  Clone este repositório: `git clone https://docs.github.com/pt/repositories/creating-and-managing-repositories/about-repositories`
+1.  Clone este repositório: `https://github.com/emi-fernandes/emi-site`
 2.  Navegue até o diretório do projeto.
 3.  Abra o arquivo `index.html` diretamente no seu navegador.
